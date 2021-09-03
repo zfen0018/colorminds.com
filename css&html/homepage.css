@@ -1,0 +1,96 @@
+intro-title{
+    text-align: center;
+    position: absolute;
+    top:30%;
+    width: 100%;
+    color:white;
+}
+section-breaker{
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+section-breaker p{
+    text-align: center;
+    top: 50%;
+    font-size: 25px;
+    color: white;
+    position: relative;
+}
+/* Conclusion Section Style */
+conclusion{
+    margin-top:100px;
+    height: 100%;
+}
+conclusion-text{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+conclusion h1,p{
+    text-align: center;
+}
+/* Animation Css */
+fade-in {
+    animation: fadeInUp ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+/* Animation Fade in Up*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+animatedFadeInUp {
+    opacity: 0
+}
+fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
