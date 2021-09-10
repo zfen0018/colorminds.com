@@ -1,0 +1,39 @@
+SQL codes:
+
+
+INSERT INTO `ColorBlind_Palettes` (`Hex`, `Name`, `RGB`, `RGB_percentage`) VALUES 
+('#999999', 'Grey', '(035,040,043)', '(15,20,20)'),
+ ('#E69F00', 'Orange', '(230,159,0)', '(90,60,0)'), 
+('#56B4E9', 'Sky Blue', '(86,180,223)', '(35,70,90)'), 
+('#009E73', 'Bluish Green', '(0,158,115)', '(0,60,50)'), 
+('#F0E442', 'Yellow', '(240,228,66)', '(95,90,25)'),
+ ('#0072B2', 'Blue', '(0,114,178)', '(0,45,70)'), 
+('#D55E00', 'Vermillion', '(213,94,0)', '(80,40,0)'), 
+('#CC79A7', 'Reddish purple', '(204,121,167)', '(80,60,70)'),
+ ('#000000', 'Black', '(0,0,0)', '(0,0,0)');
+
+INSERT INTO `popular_colors` (`Name`, `HEX`, `Popularity`) VALUES ('Blue', '#231A24', '57%'), ('Green', '#35682D', '35%'), ('White', '#FFFFFF', '32%'), ('Black', '#999999', '29%'), ('Red', '#CB3234', '21%'), ('Yellow', '#F39F18', '14%'), ('Orange', '#F54021', '12%'), ('Gray', '#8B8C7A', '12%'), ('Purple', '#A03472', '10%');
+
+
+UPDATE `popular_colors` SET `Name`='Blue',`HEX`='#231A24',`RGB`='035-040-043',`Popularity`='57%' WHERE `Name` like '%Blue%'
+UPDATE `popular_colors` SET `Name`='Green',`HEX`='#35682D',`RGB`='053-104-045',`Popularity`='35%' WHERE `Name` like '%Green%'
+UPDATE `popular_colors` SET `Name`='White',`HEX`='#FFFFFF',`RGB`='255-255-255',`Popularity`='32%' WHERE `Name` like '%White%'
+UPDATE `popular_colors` SET `Name`='Black',`HEX`='#999999',`RGB`='0-0-0-0',`Popularity`='29%' WHERE `Name` like '%Black%'
+UPDATE `popular_colors` SET `Name`='Red',`HEX`='#CB3234',`RGB`='203-050-052',`Popularity`='21%' WHERE `Name` like '%Red%'
+UPDATE `popular_colors` SET `Name`='Yellow',`HEX`='#F39F18',`RGB`='243-159-024',`Popularity`='14%' WHERE `Name` like '%Yellow%'
+
+INSERT INTO `Profession` (`P_name`, `p_count`) VALUES ('Data Analyst', '80000'), ('Data scientist', '100000'), ('Graph designers', '250000');
+
+INSERT INTO `Prefession` (`p_id`, `p_name`, `p_count`, `p_popularcountry`) VALUES ('1', 'Data Analyst', '80000', 'USA'), 
+('2', 'Data Scientist', '100000', 'USA'), ('3', 'Graph Desginer', '250000', 'USA');
+
+
+
+INSERT INTO `VisualAssets` (`Name`, `use_percentage`, `pid`) VALUES ('Stock photo\r\n', '40', '3'), ('Original graphic', '37', '3'), ('GIF', '4', '3'), 
+('Video and Presentation', '7', '1'), ('Charts and Visualization', '12', '3');
+
+
+INSERT INTO `Business` (`Scale`, `Defination`, `Bid`) VALUES ('Small Scale', 'less than 100 employee', '1'), ('Mid size', '100-900 employee', '2'), ('Large Size', 'more than 1000 employees', '3');
+
+INSERT INTO `ratings` (`ID`, `rating`, `bid`, `pid`, `rating_received`) VALUES ('1', 'very important', '1', '3', '49%'), ('2', 'Moderately Important', '1', '3', '31%'), ('3', 'Neutral', '1', '3', '10%'), 
+('4', 'Slightely Important', '1', '3', '7%'), ('5', 'Not Important', '1', '3', '3%');
