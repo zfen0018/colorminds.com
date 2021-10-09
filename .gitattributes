@@ -1,2 +1,0 @@
-wp-content/vpdb/**/*.ini merge=vp-ini
-wordpress filter=lfs diff=lfs merge=lfs -text
